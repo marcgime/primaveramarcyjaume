@@ -21,6 +21,7 @@ if (!fs.existsSync(dataDir)) {
 }
 
 const lineupFilePath = path.join(dataDir, 'lineup.json');
+const favoritesFilePath = path.join(dataDir, 'favorites.json');
 
 // Endpoint para obtener la lineup guardada
 app.get('/api/lineup', (req, res) => {
@@ -33,6 +34,35 @@ app.get('/api/lineup', (req, res) => {
     }
   } else {
     return res.json({ message: 'No hay datos guardados. Ejecuta el scraper para extraer la información.', lineup: [] });
+  }
+});
+
+// Endpoint para obtener los favoritos de la agenda
+app.get('/api/favorites', (req, res) => {
+  if (fs.existsSync(favoritesFilePath)) {
+    try {
+      const data = fs.readFileSync(favoritesFilePath, 'utf8');
+      return res.json(JSON.parse(data));
+    } catch (err) {
+      return res.status(500).json({ error: 'Error al leer la agenda guardada.' });
+    }
+  } else {
+    return res.json([]);
+  }
+});
+
+// Endpoint para guardar los favoritos de la agenda
+app.post('/api/favorites', (req, res) => {
+  const { favorites } = req.body;
+  if (!favorites || !Array.isArray(favorites)) {
+    return res.status(400).json({ error: 'El cuerpo de la petición debe contener un array en "favorites".' });
+  }
+  
+  try {
+    fs.writeFileSync(favoritesFilePath, JSON.stringify(favorites, null, 2), 'utf8');
+    return res.json({ success: true, message: 'Agenda guardada correctamente.', favorites });
+  } catch (err) {
+    return res.status(500).json({ error: 'Error al escribir la agenda guardada.' });
   }
 });
 

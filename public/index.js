@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- ESTADO DE LA APLICACIÓN ---
   let allConcerts = [];
-  let favorites = JSON.parse(localStorage.getItem('ps_favorites')) || [];
+  let favorites = [];
   let selectedDay = '';
   let selectedStage = '';
   let searchQuery = '';
@@ -70,6 +70,16 @@ document.addEventListener('DOMContentLoaded', () => {
   async function loadLineup() {
     showLoader(true);
     try {
+      // Cargar la agenda compartida desde el servidor
+      try {
+        const favResponse = await fetch('/api/favorites');
+        favorites = await favResponse.json();
+      } catch (favErr) {
+        console.error('Error cargando favoritos del servidor:', favErr);
+        // Fallback local por si el servidor falla
+        favorites = JSON.parse(localStorage.getItem('ps_favorites')) || [];
+      }
+
       const response = await fetch('/api/lineup');
       const data = await response.json();
       
@@ -321,7 +331,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- CONTROLADOR DE FAVORITOS ---
-  function toggleFavorite(id) {
+  async function toggleFavorite(id) {
     const index = favorites.indexOf(id);
     if (index === -1) {
       favorites.push(id);
@@ -329,7 +339,21 @@ document.addEventListener('DOMContentLoaded', () => {
       favorites.splice(index, 1);
     }
     
+    // Guardar en localStorage local como copia de seguridad/redundancia
     localStorage.setItem('ps_favorites', JSON.stringify(favorites));
+    
+    // Guardar en el servidor para sincronizar con cualquier otro navegador/sesión
+    try {
+      await fetch('/api/favorites', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ favorites })
+      });
+    } catch (err) {
+      console.error('Error al guardar favoritos en el servidor:', err);
+    }
     
     renderLineupList();
     renderPlanner();
