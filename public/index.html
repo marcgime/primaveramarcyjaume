@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="index.css">
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- PDF.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
 </head>
 
 <body>
@@ -196,6 +198,27 @@
       <p class="text-dim">Desarrollado con fines educativos y de planificación personal.</p>
     </div>
   </footer>
+
+  <!-- Map Modal / Popup -->
+  <div id="map-modal" class="modal-overlay hidden">
+    <div class="modal-card glass-panel">
+      <div class="modal-header">
+        <h3 id="modal-stage-name" class="modal-title">Nombre del Escenario</h3>
+        <button id="close-modal-btn" class="modal-close">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="map-viewport">
+        <div id="map-zoom-container">
+          <canvas id="map-canvas"></canvas>
+        </div>
+        <div id="map-loader" class="loader-container">
+          <div class="spinner"></div>
+          <p>Cargando mapa...</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="index.js"></script>
 </body>

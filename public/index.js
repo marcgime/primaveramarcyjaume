@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
       card.innerHTML = `
         <div class="concert-info-side">
           <div class="concert-meta">
-            <span class="badge ${getStageColorClass(c.stage)}">${c.stage}</span>
+            <span class="badge ${getStageColorClass(c.stage)} stage-link" data-stage="${c.stage}">${c.stage}</span>
             <span class="concert-time">
               <i data-lucide="clock"></i>
               ${c.startTime} - ${c.endTime} (${capitalizeFirstLetter(c.day)})
@@ -393,8 +393,8 @@ document.addEventListener('DOMContentLoaded', () => {
           <i data-lucide="alert-triangle" class="overlap-icon"></i>
           <div class="overlap-desc">
             <strong>Solapamiento detectado!</strong> 
-            El ${capitalizeFirstLetter(col.day)}: <strong>${col.concert1.name}</strong> (${col.concert1.startTime}-${col.concert1.endTime} en ${col.concert1.stage}) y 
-            <strong>${col.concert2.name}</strong> (${col.concert2.startTime}-${col.concert2.endTime} en ${col.concert2.stage}) coinciden en su horario.
+            El ${capitalizeFirstLetter(col.day)}: <strong>${col.concert1.name}</strong> (${col.concert1.startTime}-${col.concert1.endTime} en <span class="stage-link" data-stage="${col.concert1.stage}">${col.concert1.stage}</span>) y 
+            <strong>${col.concert2.name}</strong> (${col.concert2.startTime}-${col.concert2.endTime} en <span class="stage-link" data-stage="${col.concert2.stage}">${col.concert2.stage}</span>) coinciden en su horario.
           </div>
         `;
         overlapsContainer.appendChild(alert);
@@ -442,7 +442,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="planner-item-meta">
               <span class="planner-item-time">${c.startTime} - ${c.endTime}</span>
               <span>•</span>
-              <span class="planner-item-stage">${c.stage}</span>
+              <span class="planner-item-stage stage-link" data-stage="${c.stage}">${c.stage}</span>
             </div>
           </div>
           <div class="planner-item-actions">
@@ -602,4 +602,247 @@ document.addEventListener('DOMContentLoaded', () => {
     link.click();
     document.body.removeChild(link);
   }
+
+  // --- LÓGICA DE POPUP DE MAPA Y ZOOM ---
+  const mapModal = document.getElementById('map-modal');
+  const modalStageName = document.getElementById('modal-stage-name');
+  const closeModalBtn = document.getElementById('close-modal-btn');
+  const mapViewport = document.getElementById('map-viewport');
+  const mapZoomContainer = document.getElementById('map-zoom-container');
+  const mapCanvas = document.getElementById('map-canvas');
+  const mapLoader = document.getElementById('map-loader');
+
+  let pdfDoc = null;
+  let scale = 1;
+  let translateX = 0;
+  let translateY = 0;
+
+  // Lógica de carga de PDF
+  async function openMapPopup(stageName) {
+    modalStageName.textContent = stageName;
+    mapModal.classList.remove('hidden');
+    // Forzar reflow para animación
+    void mapModal.offsetWidth;
+    mapModal.classList.add('active');
+
+    if (!pdfDoc) {
+      mapLoader.classList.remove('hidden');
+      try {
+        // Inicializar worker de PDF.js
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+        
+        pdfDoc = await pdfjsLib.getDocument('/data/mapaprimavera.pdf').promise;
+        const page = await pdfDoc.getPage(1);
+        
+        const ctx = mapCanvas.getContext('2d');
+        const viewportForRender = page.getViewport({ scale: 2.0 }); // 2x para nitidez
+        
+        mapCanvas.width = viewportForRender.width;
+        mapCanvas.height = viewportForRender.height;
+        
+        const renderContext = {
+          canvasContext: ctx,
+          viewport: viewportForRender
+        };
+        
+        await page.render(renderContext).promise;
+        mapLoader.classList.add('hidden');
+        resetZoomAndPan();
+      } catch (err) {
+        console.error('Error al renderizar el mapa PDF:', err);
+        mapLoader.innerHTML = `<p class="log-line error" style="padding: 1rem;">No se pudo cargar el mapa: ${err.message}</p>`;
+      }
+    } else {
+      resetZoomAndPan();
+    }
+  }
+
+  function closeMapPopup() {
+    mapModal.classList.remove('active');
+    setTimeout(() => {
+      if (!mapModal.classList.contains('active')) {
+        mapModal.classList.add('hidden');
+      }
+    }, 300);
+  }
+
+  function resetZoomAndPan() {
+    if (!mapCanvas.width) return;
+    
+    const vw = mapViewport.clientWidth;
+    const vh = mapViewport.clientHeight;
+    const cw = mapCanvas.width;
+    const ch = mapCanvas.height;
+    
+    // Escala para ajustar todo el canvas
+    const scaleX = vw / cw;
+    const scaleY = vh / ch;
+    scale = Math.min(scaleX, scaleY) * 0.95;
+    
+    // Centrar canvas en viewport
+    translateX = (vw - cw * scale) / 2;
+    translateY = (vh - ch * scale) / 2;
+    
+    applyTransform();
+  }
+
+  function applyTransform() {
+    mapZoomContainer.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+  }
+
+  // Event Listeners de Cierre
+  closeModalBtn.addEventListener('click', closeMapPopup);
+  mapModal.addEventListener('click', (e) => {
+    if (e.target === mapModal) {
+      closeMapPopup();
+    }
+  });
+
+  // Delegación de eventos para clics en escenarios
+  document.addEventListener('click', (e) => {
+    const stageLink = e.target.closest('.stage-link');
+    if (stageLink) {
+      e.preventDefault();
+      e.stopPropagation();
+      const stageName = stageLink.dataset.stage;
+      openMapPopup(stageName);
+    }
+  });
+
+  // --- CONTROLES DE ZOOM Y PAN PARA ESCRITORIO (MOUSE) ---
+  let isDragging = false;
+  let startX = 0;
+  let startY = 0;
+
+  mapViewport.addEventListener('mousedown', (e) => {
+    if (e.button !== 0) return; // Solo clic izquierdo
+    isDragging = true;
+    startX = e.clientX - translateX;
+    startY = e.clientY - translateY;
+    mapViewport.style.cursor = 'grabbing';
+  });
+
+  window.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    translateX = e.clientX - startX;
+    translateY = e.clientY - startY;
+    applyTransform();
+  });
+
+  window.addEventListener('mouseup', () => {
+    if (isDragging) {
+      isDragging = false;
+      mapViewport.style.cursor = 'grab';
+    }
+  });
+
+  // Zoom con rueda del ratón
+  mapViewport.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    const zoomIntensity = 0.08;
+    const rect = mapViewport.getBoundingClientRect();
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
+    
+    const oldScale = scale;
+    
+    if (e.deltaY < 0) {
+      scale += scale * zoomIntensity;
+    } else {
+      scale -= scale * zoomIntensity;
+    }
+    
+    // Limitar zoom
+    scale = Math.min(Math.max(scale, 0.1), 8);
+    
+    // Zoom hacia la posición del ratón
+    translateX = mouseX - (mouseX - translateX) * (scale / oldScale);
+    translateY = mouseY - (mouseY - translateY) * (scale / oldScale);
+    
+    applyTransform();
+  }, { passive: false });
+
+  // --- CONTROLES TÁCTILES PARA MÓVIL (PAN & PINCH-TO-ZOOM) ---
+  let touchStartDist = 0;
+  let touchStartScale = 1;
+  let touchStartMidX = 0;
+  let touchStartMidY = 0;
+  let touchStartTranslateX = 0;
+  let touchStartTranslateY = 0;
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let isPanning = false;
+  let isPinching = false;
+
+  mapViewport.addEventListener('touchstart', (e) => {
+    const rect = mapViewport.getBoundingClientRect();
+    
+    if (e.touches.length === 1) {
+      isPanning = true;
+      isPinching = false;
+      touchStartX = e.touches[0].clientX - translateX;
+      touchStartY = e.touches[0].clientY - translateY;
+    } else if (e.touches.length === 2) {
+      isPinching = true;
+      isPanning = false;
+      
+      const t1 = e.touches[0];
+      const t2 = e.touches[1];
+      
+      touchStartDist = Math.hypot(t2.clientX - t1.clientX, t2.clientY - t1.clientY);
+      touchStartScale = scale;
+      
+      touchStartMidX = ((t1.clientX + t2.clientX) / 2) - rect.left;
+      touchStartMidY = ((t1.clientY + t2.clientY) / 2) - rect.top;
+      
+      touchStartTranslateX = translateX;
+      touchStartTranslateY = translateY;
+    }
+  }, { passive: true });
+
+  mapViewport.addEventListener('touchmove', (e) => {
+    const rect = mapViewport.getBoundingClientRect();
+    
+    if (isPanning && e.touches.length === 1) {
+      translateX = e.touches[0].clientX - touchStartX;
+      translateY = e.touches[0].clientY - touchStartY;
+      applyTransform();
+    } else if (isPinching && e.touches.length === 2) {
+      const t1 = e.touches[0];
+      const t2 = e.touches[1];
+      
+      const dist = Math.hypot(t2.clientX - t1.clientX, t2.clientY - t1.clientY);
+      if (touchStartDist > 0) {
+        const oldScale = scale;
+        const factor = dist / touchStartDist;
+        scale = touchStartScale * factor;
+        
+        // Limitar zoom
+        scale = Math.min(Math.max(scale, 0.1), 8);
+        
+        const midX = ((t1.clientX + t2.clientX) / 2) - rect.left;
+        const midY = ((t1.clientY + t2.clientY) / 2) - rect.top;
+        
+        translateX = midX - (midX - touchStartTranslateX) * (scale / touchStartScale);
+        translateY = midY - (midY - touchStartTranslateY) * (scale / touchStartScale);
+        
+        applyTransform();
+      }
+    }
+  }, { passive: true });
+
+  mapViewport.addEventListener('touchend', (e) => {
+    if (e.touches.length === 0) {
+      isPanning = false;
+      isPinching = false;
+    } else if (e.touches.length === 1) {
+      isPanning = true;
+      isPinching = false;
+      touchStartX = e.touches[0].clientX - translateX;
+      touchStartY = e.touches[0].clientY - translateY;
+    }
+  });
+
+  // Reajustar al cambiar tamaño de pantalla
+  window.addEventListener('resize', resetZoomAndPan);
 });
