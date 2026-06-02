@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primavera Sound Barcelona 2026 - Horarios & Planner</title>
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+  <div class="glass-bg-container">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <header class="app-header">
+    <div class="header-content container">
+      <div class="logo-area">
+        <span class="badge badge-neon">BARCELONA 2026</span>
+        <h1 class="app-title">Primavera Sound <span class="gradient-text">Marc & Jaume</span></h1>
+      </div>
+      <div class="scraper-action-zone">
+        <button id="run-scraper-btn" class="btn btn-primary">
+          <i data-lucide="play" class="btn-icon"></i>
+          Ejecutar Scraper en Vivo
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content container">
+
+    <!-- Scraper Live Console Section (Hidden by default, slides down on run) -->
+    <section id="console-section" class="console-card glass-panel hidden">
+      <div class="console-header">
+        <div class="console-title-area">
+          <span class="status-indicator pinging"></span>
+          <h3>Terminal de Scraping en Vivo</h3>
+        </div>
+        <button id="close-console-btn" class="console-close">&times;</button>
+      </div>
+      <div class="console-body" id="console-logs">
+        <div class="log-line system">[Sistema] Listo para iniciar scraping...</div>
+      </div>
+      <div class="console-footer">
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="scraper-progress" style="width: 0%"></div>
+        </div>
+        <span id="progress-text" class="progress-text">Preparado</span>
+      </div>
+    </section>
+
+    <!-- Stats Dashboard Section -->
+    <section class="stats-grid">
+      <div class="stat-card glass-panel">
+        <div class="stat-icon-wrapper purple"><i data-lucide="music"></i></div>
+        <div class="stat-info">
+          <span class="stat-value" id="stat-total-bands">0</span>
+          <span class="stat-label">Artistas Totales</span>
+        </div>
+      </div>
+      <div class="stat-card glass-panel">
+        <div class="stat-icon-wrapper pink"><i data-lucide="map-pin"></i></div>
+        <div class="stat-info">
+          <span class="stat-value" id="stat-total-stages">0</span>
+          <span class="stat-label">Escenarios</span>
+        </div>
+      </div>
+      <div class="stat-card glass-panel">
+        <div class="stat-icon-wrapper cyan"><i data-lucide="calendar"></i></div>
+        <div class="stat-info">
+          <span class="stat-value" id="stat-total-days">0</span>
+          <span class="stat-label">Días de Festival</span>
+        </div>
+      </div>
+      <div class="stat-card glass-panel">
+        <div class="stat-icon-wrapper yellow"><i data-lucide="clock"></i></div>
+        <div class="stat-info">
+          <span class="stat-value" id="stat-favorites-count">0</span>
+          <span class="stat-label">En Mi Agenda</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- App Main Split: Lineup and Planner -->
+    <div class="app-grid">
+
+      <!-- Left Panel: Scraped Lineup List -->
+      <section class="lineup-section glass-panel">
+        <div class="section-header">
+          <div class="title-with-subtitle">
+            <h2 class="section-title">Horarios del Festival</h2>
+            <p class="section-subtitle">Horarios extraídos directamente de la web oficial</p>
+          </div>
+          <div class="view-toggles">
+            <!-- Toggles if any -->
+          </div>
+        </div>
+
+        <!-- Filter controls -->
+        <div class="filter-bar">
+          <div class="search-box">
+            <i data-lucide="search" class="search-icon"></i>
+            <input type="text" id="search-input" placeholder="Buscar artista...">
+          </div>
+          <div class="select-box">
+            <select id="stage-select">
+              <option value="">Todos los escenarios</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Day Tabs -->
+        <div class="day-tabs" id="day-tabs-container">
+          <!-- Dynamically populated day tabs, e.g. "Todos", "Jueves", "Viernes" -->
+          <button class="day-tab active" data-day="">Todos los Días</button>
+        </div>
+
+        <!-- Lineup List -->
+        <div class="lineup-list-container">
+          <div id="lineup-loader" class="loader-container hidden">
+            <div class="spinner"></div>
+            <p>Cargando horarios...</p>
+          </div>
+
+          <div id="lineup-empty" class="empty-state">
+            <i data-lucide="file-warning" class="empty-icon"></i>
+            <h3>No hay horarios disponibles</h3>
+            <p>Por favor, haz clic en "Ejecutar Scraper en Vivo" para extraer los horarios actuales de la web de
+              Primavera Sound.</p>
+          </div>
+
+          <div id="lineup-list" class="lineup-list">
+            <!-- Dynamic list of concert cards -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Panel: My Agenda & Planner -->
+      <section class="planner-section glass-panel">
+        <div class="section-header">
+          <div class="title-with-subtitle">
+            <h2 class="section-title">Mi Agenda Personal</h2>
+            <p class="section-subtitle">Tu itinerario personalizado libre de conflictos</p>
+          </div>
+          <div class="export-actions">
+            <button id="export-csv-btn" class="btn btn-secondary btn-sm" disabled>
+              <i data-lucide="download" class="btn-icon"></i> Exportar CSV
+            </button>
+            <button id="export-json-btn" class="btn btn-secondary btn-sm" disabled>
+              <i data-lucide="file-json" class="btn-icon"></i> Exportar JSON
+            </button>
+            <button id="export-ics-btn" class="btn btn-secondary btn-sm" disabled>
+              <i data-lucide="calendar" class="btn-icon"></i> Exportar Calendario
+            </button>
+          </div>
+        </div>
+
+        <div class="planner-body">
+          <div id="planner-empty" class="empty-state">
+            <i data-lucide="heart" class="empty-icon favoriting"></i>
+            <h3>Crea tu propia ruta</h3>
+            <p>Haz clic en el icono del corazón en cualquier concierto de la lista para añadirlo a tu agenda
+              personalizada y controlar tus horarios.</p>
+          </div>
+
+          <!-- Collision/Overlap Alerts Zone -->
+          <div id="overlaps-container" class="overlaps-container">
+            <!-- Dynamic overlap alert cards -->
+          </div>
+
+          <!-- Selected Favorites list -->
+          <div id="planner-list" class="planner-list">
+            <!-- Grouped by day, list of user selected concerts -->
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="app-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Primavera Sound Scheduler & Planner. Proyecto de Scraping Personal.</p>
+      <p class="text-dim">Desarrollado con fines educativos y de planificación personal.</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

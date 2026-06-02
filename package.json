@@ -1,0 +1,14 @@
+{
+  "name": "primavera-sound-scraper",
+  "version": "1.0.0",
+  "description": "Scraper for Primavera Sound festival schedules",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "puppeteer": "^22.10.0"
+  }
+}

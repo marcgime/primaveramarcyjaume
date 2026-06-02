@@ -1,0 +1,1788 @@
+{
+  "lineup": [
+    {
+      "id": "2hollis-cupra-1780616100000",
+      "name": "2hollis",
+      "day": "Jueves",
+      "stage": "Cupra",
+      "startTime": "01:35",
+      "endTime": "02:35"
+    },
+    {
+      "id": "a-guy-called-gerald-warehouse-1780794600000",
+      "name": "A Guy Called Gerald Live",
+      "day": "Sábado",
+      "stage": "The Levi's Warehouse",
+      "startTime": "03:10",
+      "endTime": "04:10"
+    },
+    {
+      "id": "absolutely-disney-stage-1780768800000",
+      "name": "Absolutely",
+      "day": "Sábado",
+      "stage": "Disney",
+      "startTime": "20:00",
+      "endTime": "20:40"
+    },
+    {
+      "id": "addison-rae-revolut-1780686000000",
+      "name": "Addison Rae",
+      "day": "Viernes",
+      "stage": "Revolut",
+      "startTime": "21:00",
+      "endTime": "22:00"
+    },
+    {
+      "id": "agriculture-port-1780599300000",
+      "name": "Agriculture",
+      "day": "Jueves",
+      "stage": "Port",
+      "startTime": "20:55",
+      "endTime": "21:50"
+    },
+    {
+      "id": "ahadadream-plenitude-1780611900000",
+      "name": "Ahadadream",
+      "day": "Jueves",
+      "stage": "Plenitude",
+      "startTime": "00:25",
+      "endTime": "02:00"
+    },
+    {
+      "id": "aiko-el-grupo-estrella-damm-1780587000000",
+      "name": "Aiko el Grupo",
+      "day": "Jueves",
+      "stage": "Estrella Damm",
+      "startTime": "17:30",
+      "endTime": "18:15"
+    },
+    {
+      "id": "akazie-barcelona-sona-1780768800000",
+      "name": "Akazie",
+      "day": "Sábado",
+      "stage": "Barcelona Sona by Estrella Damm",
+      "startTime": "20:00",
+      "endTime": "20:40"
+    },
+    {
+      "id": "ale-hope-barcelona-sona-1780595100000",
+      "name": "Ale Hope",
+      "day": "Jueves",
+      "stage": "Barcelona Sona by Estrella Damm",
+      "startTime": "19:45",
+      "endTime": "20:45"
+    },
+    {
+      "id": "alex-g-revolut-1780599000000",
+      "name": "Alex G",
+      "day": "Jueves",
+      "stage": "Revolut",
+      "startTime": "20:50",
+      "endTime": "21:50"
+    },
+    {
+      "id": "amaarae-cupra-1780694400000",
+      "name": "Amaarae",
+      "day": "Viernes",
+      "stage": "Cupra",
+      "startTime": "23:20",
+      "endTime": "00:20"
+    },
+    {
+      "id": "amiga-date-cuenta-aperol-island-of-joy-1780761600000",
+      "name": "Amiga Date Cuenta",
+      "day": "Sábado",
+      "stage": "Aperol Island of Joy",
+      "startTime": "18:00",
+      "endTime": "18:40"
+    },
+    {
+      "id": "anna-von-hausswolff-auditori-rockdelux-1780772400000",
+      "name": "Anna von Hausswolff",
+      "day": "Sábado",
+      "stage": "Auditori Rockdelux",
+      "startTime": "21:00",
+      "endTime": "22:00"
+    },
+    {
+      "id": "annahstasia-auditori-rockdelux-1780669800000",
+      "name": "Annahstasia",
+      "day": "Viernes",
+      "stage": "Auditori Rockdelux",
+      "startTime": "16:30",
+      "endTime": "17:30"
+    },
+    {
+      "id": "annahstasia-schwarzkopf-backstage-1780763700000",
+      "name": "Annahstasia",
+      "day": "Sábado",
+      "stage": "The Backstage by Schwarzkopf",
+      "startTime": "18:35",
+      "endTime": "19:00"
+    },
+    {
+      "id": "anthony-naples-warehouse-1780624200000",
+      "name": "Anthony Naples",
+      "day": "Jueves",
+      "stage": "The Levi's Warehouse",
+      "startTime": "03:50",
+      "endTime": "05:20"
+    },
+    {
+      "id": "ashnikko-occident-1780769700000",
+      "name": "Ashnikko",
+      "day": "Sábado",
+      "stage": "Occident",
+      "startTime": "20:15",
+      "endTime": "21:10"
+    },
+    {
+      "id": "aurora-halal-plenitude-1780700700000",
+      "name": "Aurora Halal",
+      "day": "Viernes",
+      "stage": "Plenitude",
+      "startTime": "01:05",
+      "endTime": "02:35"
+    },
+    {
+      "id": "babymorocco-levis-501-plaza-1780687500000",
+      "name": "Babymorocco",
+      "day": "Viernes",
+      "stage": "The Levi's Plaza",
+      "startTime": "21:25",
+      "endTime": "21:55"
+    },
+    {
+      "id": "bad-gyal-estrella-damm-1780615200000",
+      "name": "Bad Gyal",
+      "day": "Jueves",
+      "stage": "Estrella Damm",
+      "startTime": "01:20",
+      "endTime": "02:50"
+    },
+    {
+      "id": "bambii-plenitude-1780617900000",
+      "name": "BAMBII",
+      "day": "Jueves",
+      "stage": "Plenitude",
+      "startTime": "02:05",
+      "endTime": "03:05"
+    },
+    {
+      "id": "barry-b-revolut-1780758900000",
+      "name": "Barry B",
+      "day": "Sábado",
+      "stage": "Revolut",
+      "startTime": "17:15",
+      "endTime": "18:00"
+    },
+    {
+      "id": "barry-b-levis-501-plaza-1780780500000",
+      "name": "Barry B",
+      "day": "Sábado",
+      "stage": "The Levi's Plaza",
+      "startTime": "23:15",
+      "endTime": "23:45"
+    },
+    {
+      "id": "baxter-dury-revolut-1780763400000",
+      "name": "Baxter Dury",
+      "day": "Sábado",
+      "stage": "Revolut",
+      "startTime": "18:30",
+      "endTime": "19:30"
+    },
+    {
+      "id": "bclip-pulse-cupra-1780596000000",
+      "name": "Bclip",
+      "day": "Jueves",
+      "stage": "Cupra Pulse",
+      "startTime": "20:00",
+      "endTime": "21:00"
+    },
+    {
+      "id": "bd-schwarzkopf-1780670100000",
+      "name": ".bd.",
+      "day": "Viernes",
+      "stage": "Schwarzkopf",
+      "startTime": "16:35",
+      "endTime": "17:15"
+    },
+    {
+      "id": "beatrice-m-warehouse-1780789500000",
+      "name": "Beatrice M.",
+      "day": "Sábado",
+      "stage": "The Levi's Warehouse",
+      "startTime": "01:45",
+      "endTime": "03:05"
+    },
+    {
+      "id": "bel-cobain-levis-501-club-1780604100000",
+      "name": "Bel Cobain",
+      "day": "Jueves",
+      "stage": "The 501 Club curated by Colors x Studios",
+      "startTime": "22:15",
+      "endTime": "22:45"
+    },
+    {
+      "id": "ben-ufo-plenitude-1780621500000",
+      "name": "Ben UFO",
+      "day": "Jueves",
+      "stage": "Plenitude",
+      "startTime": "03:05",
+      "endTime": "05:00"
+    },
+    {
+      "id": "berlioz-plenitude-1780592400000",
+      "name": "berlioz",
+      "day": "Jueves",
+      "stage": "Plenitude",
+      "startTime": "19:00",
+      "endTime": "22:00"
+    },
+    {
+      "id": "bestia-bebe-occident-1780761000000",
+      "name": "Bestia Bebé",
+      "day": "Sábado",
+      "stage": "Occident",
+      "startTime": "17:50",
+      "endTime": "18:35"
+    },
+    {
+      "id": "beverly-glenncopeland-and-elizabeth-copeland-auditori-rockdelux-1780767000000",
+      "name": "Beverly Glenn-Copeland and Elizabeth Copeland",
+      "day": "Sábado",
+      "stage": "Auditori Rockdelux",
+      "startTime": "19:30",
+      "endTime": "20:30"
+    },
+    {
+      "id": "big-thief-estrella-damm-1780767600000",
+      "name": "Big Thief",
+      "day": "Sábado",
+      "stage": "Estrella Damm",
+      "startTime": "19:40",
+      "endTime": "20:40"
+    },
+    {
+      "id": "blondish-parc-del-forum-1780842600000",
+      "name": "BLOND:ISH",
+      "day": "Domingo",
+      "stage": "Parc del Fòrum",
+      "startTime": "16:30",
+      "endTime": "18:00"
+    },
+    {
+      "id": "blood-orange-revolut-1780590000000",
+      "name": "Blood Orange",
+      "day": "Jueves",
+      "stage": "Revolut",
+      "startTime": "18:20",
+      "endTime": "19:20"
+    },
+    {
+      "id": "bombificadas-aperol-island-of-joy-1780675200000",
+      "name": "Bombificadas",
+      "day": "Viernes",
+      "stage": "Aperol Island of Joy",
+      "startTime": "18:00",
+      "endTime": "18:40"
+    },
+    {
+      "id": "brat-star-pulse-cupra-1780696800000",
+      "name": "Brat Star DJ Set",
+      "day": "Viernes",
+      "stage": "Cupra Pulse",
+      "startTime": "00:00",
+      "endTime": "01:00"
+    },
+    {
+      "id": "brighde-chaimbeul-warehouse-1780607400000",
+      "name": "Brìghde Chaimbeul",
+      "day": "Jueves",
+      "stage": "The Levi's Warehouse",
+      "startTime": "23:10",
+      "endTime": "00:10"
+    },
+    {
+      "id": "brutalismus-3000-pulse-cupra-1780693200000",
+      "name": "Brutalismus 3000",
+      "day": "Viernes",
+      "stage": "Cupra Pulse",
+      "startTime": "23:00",
+      "endTime": "00:00"
+    },
+    {
+      "id": "buscabulla-cupra-1780678200000",
+      "name": "Buscabulla",
+      "day": "Viernes",
+      "stage": "Cupra",
+      "startTime": "18:50",
+      "endTime": "19:45"
+    },
+    {
+      "id": "call-super-plenitude-1780686000000",
+      "name": "Call Super",
+      "day": "Viernes",
+      "stage": "Plenitude",
+      "startTime": "21:00",
+      "endTime": "22:30"
+    },
+    {
+      "id": "cameron-winter-auditori-rockdelux-1780585200000",
+      "name": "Cameron Winter",
+      "day": "Jueves",
+      "stage": "Auditori Rockdelux",
+      "startTime": "17:00",
+      "endTime": "18:00"
+    },
+    {
+      "id": "cara-delevingne-schwarzkopf-1780705800000",
+      "name": "Cara Delevingne",
+      "day": "Viernes",
+      "stage": "Schwarzkopf",
+      "startTime": "02:30",
+      "endTime": "03:10"
+    },
+    {
+      "id": "carl-cox-parc-del-forum-1780855200000",
+      "name": "Carl Cox",
+      "day": "Domingo",
+      "stage": "Parc del Fòrum",
+      "startTime": "20:00",
+      "endTime": "23:00"
+    },
+    {
+      "id": "caroline-auditori-rockdelux-1780597800000",
+      "name": "caroline",
+      "day": "Jueves",
+      "stage": "Auditori Rockdelux",
+      "startTime": "20:30",
+      "endTime": "21:30"
+    },
+    {
+      "id": "cheri-levis-501-plaza-1780694400000",
+      "name": "Chéri",
+      "day": "Viernes",
+      "stage": "The Levi's Plaza",
+      "startTime": "23:20",
+      "endTime": "23:50"
+    },
+    {
+      "id": "chica-acosta-barcelona-sona-1780776000000",
+      "name": "Chica Acosta",
+      "day": "Sábado",
+      "stage": "Barcelona Sona by Estrella Damm",
+      "startTime": "22:00",
+      "endTime": "22:35"
+    },
+    {
+      "id": "cobrah-levis-501-plaza-1780773300000",
+      "name": "Cobrah",
+      "day": "Sábado",
+      "stage": "The Levi's Plaza",
+      "startTime": "21:15",
+      "endTime": "21:45"
+    },
+    {
+      "id": "corte-aperol-island-of-joy-1780771200000",
+      "name": "Corte!",
+      "day": "Sábado",
+      "stage": "Aperol Island of Joy",
+      "startTime": "20:40",
+      "endTime": "21:20"
+    },
+    {
+      "id": "dani-dicostas-aperol-island-of-joy-1780598400000",
+      "name": "Dani Dicostas",
+      "day": "Jueves",
+      "stage": "Aperol Island of Joy",
+      "startTime": "20:40",
+      "endTime": "21:20"
+    },
+    {
+      "id": "dave-p-pulse-cupra-1780713900000",
+      "name": "Dave P.",
+      "day": "Viernes",
+      "stage": "Cupra Pulse",
+      "startTime": "04:45",
+      "endTime": "06:00"
+    },
+    {
+      "id": "debasement-pulse-cupra-1780706700000",
+      "name": "deBasement",
+      "day": "Viernes",
+      "stage": "Cupra Pulse",
+      "startTime": "02:45",
+      "endTime": "03:45"
+    },
+    {
+      "id": "debit-pulse-cupra-1780710300000",
+      "name": "Debit",
+      "day": "Viernes",
+      "stage": "Cupra Pulse",
+      "startTime": "03:45",
+      "endTime": "04:45"
+    },
+    {
+      "id": "depresion-sonora-schwarzkopf-1780761600000",
+      "name": "Depresión Sonora",
+      "day": "Sábado",
+      "stage": "Schwarzkopf",
+      "startTime": "18:00",
+      "endTime": "18:45"
+    },
+    {
+      "id": "dharmacide-aperol-island-of-joy-1780689600000",
+      "name": "Dharmacide",
+      "day": "Viernes",
+      "stage": "Aperol Island of Joy",
+      "startTime": "22:00",
+      "endTime": "22:40"
+    },
+    {
+      "id": "dijon-cupra-1780780800000",
+      "name": "Dijon",
+      "day": "Sábado",
+      "stage": "Cupra",
+      "startTime": "23:20",
+      "endTime": "00:20"
+    },
+    {
+      "id": "disobey-schwarzkopf-1780689900000",
+      "name": "Disobey",
+      "day": "Viernes",
+      "stage": "Schwarzkopf",
+      "startTime": "22:05",
+      "endTime": "23:05"
+    },
+    {
+      "id": "dj-khalipha-pulse-cupra-1780678800000",
+      "name": "Dj Khalipha",
+      "day": "Viernes",
+      "stage": "Cupra Pulse",
+      "startTime": "19:00",
+      "endTime": "20:00"
+    },
+    {
+      "id": "dj-koolt-plenitude-1780691400000",
+      "name": "DJ Koolt",
+      "day": "Viernes",
+      "stage": "Plenitude",
+      "startTime": "22:30",
+      "endTime": "00:00"
+    },
+    {
+      "id": "dj-marcelle-warehouse-1780780200000",
+      "name": "DJ Marcelle",
+      "day": "Sábado",
+      "stage": "The Levi's Warehouse",
+      "startTime": "23:10",
+      "endTime": "00:35"
+    },
+    {
+      "id": "dj-nobu-warehouse-1780798500000",
+      "name": "DJ Nobu",
+      "day": "Sábado",
+      "stage": "The Levi's Warehouse",
+      "startTime": "04:15",
+      "endTime": "05:35"
+    },
+    {
+      "id": "dj-playero-pulse-cupra-1780603200000",
+      "name": "DJ Playero",
+      "day": "Jueves",
+      "stage": "Cupra Pulse",
+      "startTime": "22:00",
+      "endTime": "23:00"
+    },
+    {
+      "id": "doja-cat-revolut-1780608600000",
+      "name": "Doja Cat",
+      "day": "Jueves",
+      "stage": "Revolut",
+      "startTime": "23:30",
+      "endTime": "01:10"
+    },
+    {
+      "id": "ecco2k-schwarzkopf-1780799700000",
+      "name": "Ecco2k",
+      "day": "Sábado",
+      "stage": "Schwarzkopf",
+      "startTime": "04:35",
+      "endTime": "05:35"
+    },
+    {
+      "id": "einsturzende-neubauten-auditori-rockdelux-1780680600000",
+      "name": "Einstürzende Neubauten",
+      "day": "Viernes",
+      "stage": "Auditori Rockdelux",
+      "startTime": "19:30",
+      "endTime": "20:30"
+    },
+    {
+      "id": "ethel-cain-estrella-damm-1780681500000",
+      "name": "Ethel Cain",
+      "day": "Viernes",
+      "stage": "Estrella Damm",
+      "startTime": "19:45",
+      "endTime": "20:45"
+    },
+    {
+      "id": "european-vampire-levis-501-plaza-1780593000000",
+      "name": "European Vampire",
+      "day": "Jueves",
+      "stage": "The Levi's Plaza",
+      "startTime": "19:10",
+      "endTime": "19:40"
+    },
+    {
+      "id": "fakemink-schwarzkopf-1780698300000",
+      "name": "fakemink",
+      "day": "Viernes",
+      "stage": "Schwarzkopf",
+      "startTime": "00:25",
+      "endTime": "01:25"
+    },
+    {
+      "id": "father-john-misty-cupra-1780606800000",
+      "name": "Father John Misty",
+      "day": "Jueves",
+      "stage": "Cupra",
+      "startTime": "23:00",
+      "endTime": "00:20"
+    },
+    {
+      "id": "fcukers-schwarzkopf-1780620000000",
+      "name": "Fcukers",
+      "day": "Jueves",
+      "stage": "Schwarzkopf",
+      "startTime": "02:40",
+      "endTime": "03:35"
+    },
+    {
+      "id": "femtanyl-port-1780788600000",
+      "name": "Femtanyl",
+      "day": "Sábado",
+      "stage": "Port",
+      "startTime": "01:30",
+      "endTime": "02:30"
+    },
+    {
+      "id": "fillo-deportaberta-fever-1780761600000",
+      "name": "Fillo Deportaberta",
+      "day": "Sábado",
+      "stage": "Fever House",
+      "startTime": "18:00",
+      "endTime": "19:00"
+    },
+    {
+      "id": "florence-road-port-1780606800000",
+      "name": "Florence Road",
+      "day": "Jueves",
+      "stage": "Port",
+      "startTime": "23:00",
+      "endTime": "00:00"
+    },
+    {
+      "id": "florentino-b2b-dj-g2g-plenitude-1780767000000",
+      "name": "Florentino b2b dj g2g",
+      "day": "Sábado",
+      "stage": "Plenitude",
+      "startTime": "19:30",
+      "endTime": "21:35"
+    },
+    {
+      "id": "gara-duran-aperol-island-of-joy-1780593600000",
+      "name": "Gara Durán",
+      "day": "Jueves",
+      "stage": "Aperol Island of Joy",
+      "startTime": "19:20",
+      "endTime": "20:00"
+    },
+    {
+      "id": "geese-occident-1780595100000",
+      "name": "Geese",
+      "day": "Jueves",
+      "stage": "Occident",
+      "startTime": "19:45",
+      "endTime": "20:45"
+    },
+    {
+      "id": "gelli-haha-schwarzkopf-1780767900000",
+      "name": "Gelli Haha",
+      "day": "Sábado",
+      "stage": "Schwarzkopf",
+      "startTime": "19:45",
+      "endTime": "20:45"
+    },
+    {
+      "id": "gisela-joao-cupra-1780586100000",
+      "name": "Gisela João",
+      "day": "Jueves",
+      "stage": "Cupra",
+      "startTime": "17:15",
+      "endTime": "17:55"
+    },
+    {
+      "id": "gorillaz-estrella-damm-1780787700000",
+      "name": "Gorillaz",
+      "day": "Sábado",
+      "stage": "Estrella Damm",
+      "startTime": "01:15",
+      "endTime": "02:45"
+    },
+    {
+      "id": "grace-ives-cupra-1780762200000",
+      "name": "Grace Ives",
+      "day": "Sábado",
+      "stage": "Cupra",
+      "startTime": "18:10",
+      "endTime": "18:55"
+    },
+    {
+      "id": "greg-pulse-cupra-1780682400000",
+      "name": "GЯEG",
+      "day": "Viernes",
+      "stage": "Cupra Pulse",
+      "startTime": "20:00",
+      "endTime": "21:00"
+    },
+    {
+      "id": "greta-parc-del-forum-1780837200000",
+      "name": "Greta",
+      "day": "Domingo",
+      "stage": "Parc del Fòrum",
+      "startTime": "15:00",
+      "endTime": "16:30"
+    },
+    {
+      "id": "guedra-guedra-plenitude-1780608300000",
+      "name": "Guedra Guedra",
+      "day": "Jueves",
+      "stage": "Plenitude",
+      "startTime": "23:25",
+      "endTime": "00:25"
+    },
+    {
+      "id": "guitarricadelafuente-parc-del-forum-1780510500000",
+      "name": "Guitarricadelafuente",
+      "day": "Miércoles",
+      "stage": "Parc del Fòrum",
+      "startTime": "20:15",
+      "endTime": "21:15"
+    },
+    {
+      "id": "hadren-barcelona-sona-1780765200000",
+      "name": "Hadren",
+      "day": "Sábado",
+      "stage": "Barcelona Sona by Estrella Damm",
+      "startTime": "19:00",
+      "endTime": "19:45"
+    },
+    {
+      "id": "haich-ber-na-levis-501-club-1780690500000",
+      "name": "Haich Ber Na",
+      "day": "Viernes",
+      "stage": "The 501 Club curated by Colors x Studios",
+      "startTime": "22:15",
+      "endTime": "22:45"
+    },
+    {
+      "id": "haloplus-levis-501-club-1780776900000",
+      "name": "Haloplus+",
+      "day": "Sábado",
+      "stage": "The 501 Club curated by Colors x Studios",
+      "startTime": "22:15",
+      "endTime": "22:45"
+    },
+    {
+      "id": "hannah-diamond-pulse-cupra-1780700400000",
+      "name": "Hannah Diamond (DJ)",
+      "day": "Viernes",
+      "stage": "Cupra Pulse",
+      "startTime": "01:00",
+      "endTime": "02:00"
+    },
+    {
+      "id": "hekt-pulse-cupra-1780704000000",
+      "name": "Hekt",
+      "day": "Viernes",
+      "stage": "Cupra Pulse",
+      "startTime": "02:00",
+      "endTime": "02:45"
+    },
+    {
+      "id": "hello-sasy-fever-1780588800000",
+      "name": "Hello Sasy",
+      "day": "Jueves",
+      "stage": "Fever House",
+      "startTime": "18:00",
+      "endTime": "19:00"
+    },
+    {
+      "id": "hypnosis-therapy-schwarzkopf-1780583400000",
+      "name": "Hypnosis Therapy",
+      "day": "Jueves",
+      "stage": "Schwarzkopf",
+      "startTime": "16:30",
+      "endTime": "17:10"
+    },
+    {
+      "id": "iglooghost-warehouse-1780712700000",
+      "name": "Iglooghost",
+      "day": "Viernes",
+      "stage": "The Levi's Warehouse",
+      "startTime": "04:25",
+      "endTime": "05:25"
+    },
+    {
+      "id": "isabella-lovestory-levis-501-plaza-1780607400000",
+      "name": "Isabella Lovestory",
+      "day": "Jueves",
+      "stage": "The Levi's Plaza",
+      "startTime": "23:10",
+      "endTime": "23:40"
+    },
+    {
+      "id": "ivy-barkakati-barcelona-sona-1780675200000",
+      "name": "Ivy Barkakati",
+      "day": "Viernes",
+      "stage": "Barcelona Sona by Estrella Damm",
+      "startTime": "18:00",
+      "endTime": "18:45"
+    },
+    {
+      "id": "iza-tkm-pulse-cupra-1780599600000",
+      "name": "iza tkm",
+      "day": "Jueves",
+      "stage": "Cupra Pulse",
+      "startTime": "21:00",
+      "endTime": "22:00"
+    },
+    {
+      "id": "jade-occident-1780698600000",
+      "name": "Jade",
+      "day": "Viernes",
+      "stage": "Occident",
+      "startTime": "00:30",
+      "endTime": "01:30"
+    },
+    {
+      "id": "jan-barcelona-sona-1780690200000",
+      "name": "Jan",
+      "day": "Viernes",
+      "stage": "Barcelona Sona by Estrella Damm",
+      "startTime": "22:10",
+      "endTime": "23:05"
+    },
+    {
+      "id": "jasmine4t-schwarzkopf-backstage-1780598400000",
+      "name": "Jasmine.4.T.",
+      "day": "Jueves",
+      "stage": "The Backstage by Schwarzkopf",
+      "startTime": "20:40",
+      "endTime": "21:10"
+    },
+    {
+      "id": "jasss-plenitude-1780793700000",
+      "name": "JASSS",
+      "day": "Sábado",
+      "stage": "Plenitude",
+      "startTime": "02:55",
+      "endTime": "05:00"
+    },
+    {
+      "id": "jimena-amarillo-cupra-1780758600000",
+      "name": "Jimena Amarillo",
+      "day": "Sábado",
+      "stage": "Cupra",
+      "startTime": "17:10",
+      "endTime": "17:50"
+    },
+    {
+      "id": "joan-la-barbara-warehouse-1780689600000",
+      "name": "Joan La Barbara",
+      "day": "Viernes",
+      "stage": "The Levi's Warehouse",
+      "startTime": "22:00",
+      "endTime": "22:45"
+    },
+    {
+      "id": "joey-valence-and-brae-schwarzkopf-1780784700000",
+      "name": "Joey Valence & Brae",
+      "day": "Sábado",
+      "stage": "Schwarzkopf",
+      "startTime": "00:25",
+      "endTime": "01:25"
+    },
+    {
+      "id": "joseph-capriati-parc-del-forum-1780848000000",
+      "name": "Joseph Capriati",
+      "day": "Domingo",
+      "stage": "Parc del Fòrum",
+      "startTime": "18:00",
+      "endTime": "20:00"
+    },
+    {
+      "id": "juicy-bae-schwarzkopf-1780675500000",
+      "name": "Juicy Bae",
+      "day": "Viernes",
+      "stage": "Schwarzkopf",
+      "startTime": "18:05",
+      "endTime": "18:50"
+    },
+    {
+      "id": "kiki-cupra-1780711800000",
+      "name": "KI/KI",
+      "day": "Viernes",
+      "stage": "Cupra",
+      "startTime": "04:10",
+      "endTime": "06:00"
+    },
+    {
+      "id": "kneecap-occident-1780794000000",
+      "name": "Kneecap",
+      "day": "Sábado",
+      "stage": "Occident",
+      "startTime": "03:00",
+      "endTime": "04:15"
+    },
+    {
+      "id": "knocked-loose-cupra-1780788900000",
+      "name": "Knocked Loose",
+      "day": "Sábado",
+      "stage": "Cupra",
+      "startTime": "01:35",
+      "endTime": "02:35"
+    },
+    {
+      "id": "korashe-levis-501-club-1780695900000",
+      "name": "korashe",
+      "day": "Viernes",
+      "stage": "The 501 Club curated by Colors x Studios",
+      "startTime": "23:45",
+      "endTime": "00:15"
+    },
+    {
+      "id": "kylesa-port-1780702500000",
+      "name": "Kylesa",
+      "day": "Viernes",
+      "stage": "Port",
+      "startTime": "01:35",
+      "endTime": "02:25"
+    },
+    {
+      "id": "lablackie-schwarzkopf-1780595700000",
+      "name": "LaBlackie",
+      "day": "Jueves",
+      "stage": "Schwarzkopf",
+      "startTime": "19:55",
+      "endTime": "20:50"
+    },
+    {
+      "id": "lambrini-girls-port-1780780200000",
+      "name": "Lambrini Girls",
+      "day": "Sábado",
+      "stage": "Port",
+      "startTime": "23:10",
+      "endTime": "00:05"
+    },
+    {
+      "id": "las-petunias-port-1780672800000",
+      "name": "Las Petunias",
+      "day": "Viernes",
+      "stage": "Port",
+      "startTime": "17:20",
+      "endTime": "18:00"
+    },
+    {
+      "id": "lea-sen-levis-501-club-1780768800000",
+      "name": "Léa Sen",
+      "day": "Sábado",
+      "stage": "The 501 Club curated by Colors x Studios",
+      "startTime": "20:00",
+      "endTime": "20:30"
+    },
+    {
+      "id": "lechuga-zafiro-and-verraco-hyperverbena-plenitude-1780777800000",
+      "name": "Lechuga Zafiro & Verraco: Hyperverbena",
+      "day": "Sábado",
+      "stage": "Plenitude",
+      "startTime": "22:30",
+      "endTime": "23:45"
+    },
+    {
+      "id": "little-simz-revolut-1780771800000",
+      "name": "Little Simz",
+      "day": "Sábado",
+      "stage": "Revolut",
+      "startTime": "20:50",
+      "endTime": "21:50"
+    },
+    {
+      "id": "loukeman-pulse-cupra-1780689600000",
+      "name": "Loukeman",
+      "day": "Viernes",
+      "stage": "Cupra Pulse",
+      "startTime": "22:00",
+      "endTime": "23:00"
+    },
+    {
+      "id": "lucrecia-dalt-auditori-rockdelux-1780592400000",
+      "name": "Lucrecia Dalt",
+      "day": "Jueves",
+      "stage": "Auditori Rockdelux",
+      "startTime": "19:00",
+      "endTime": "20:00"
+    },
+    {
+      "id": "lusillon-schwarzkopf-backstage-1780685400000",
+      "name": "Lusillon",
+      "day": "Viernes",
+      "stage": "The Backstage by Schwarzkopf",
+      "startTime": "20:50",
+      "endTime": "21:20"
+    },
+    {
+      "id": "m8nse-plenitude-1780761600000",
+      "name": "M8NSE",
+      "day": "Sábado",
+      "stage": "Plenitude",
+      "startTime": "18:00",
+      "endTime": "19:30"
+    },
+    {
+      "id": "ma-ra-barcelona-sona-1780588800000",
+      "name": "Ma Ra",
+      "day": "Jueves",
+      "stage": "Barcelona Sona by Estrella Damm",
+      "startTime": "18:00",
+      "endTime": "18:45"
+    },
+    {
+      "id": "mac-demarco-occident-1780602900000",
+      "name": "Mac DeMarco",
+      "day": "Jueves",
+      "stage": "Occident",
+      "startTime": "21:55",
+      "endTime": "22:55"
+    },
+    {
+      "id": "malena-plenitude-1780675200000",
+      "name": "Malena",
+      "day": "Viernes",
+      "stage": "Plenitude",
+      "startTime": "18:00",
+      "endTime": "19:30"
+    },
+    {
+      "id": "malibu-warehouse-1780603200000",
+      "name": "Malibu",
+      "day": "Jueves",
+      "stage": "The Levi's Warehouse",
+      "startTime": "22:00",
+      "endTime": "23:00"
+    },
+    {
+      "id": "marc-pinol-warehouse-1780704900000",
+      "name": "Marc Piñol",
+      "day": "Viernes",
+      "stage": "The Levi's Warehouse",
+      "startTime": "02:15",
+      "endTime": "04:15"
+    },
+    {
+      "id": "marina-occident-1780785600000",
+      "name": "Marina",
+      "day": "Sábado",
+      "stage": "Occident",
+      "startTime": "00:40",
+      "endTime": "01:40"
+    },
+    {
+      "id": "mark-william-lewis-auditori-rockdelux-1780675200000",
+      "name": "mark william lewis",
+      "day": "Viernes",
+      "stage": "Auditori Rockdelux",
+      "startTime": "18:00",
+      "endTime": "19:00"
+    },
+    {
+      "id": "martin-disney-stage-1780682400000",
+      "name": "MARTIN",
+      "day": "Viernes",
+      "stage": "Disney",
+      "startTime": "20:00",
+      "endTime": "20:40"
+    },
+    {
+      "id": "massive-attack-estrella-damm-1780603500000",
+      "name": "Massive Attack",
+      "day": "Jueves",
+      "stage": "Estrella Damm",
+      "startTime": "22:05",
+      "endTime": "23:20"
+    },
+    {
+      "id": "matmos-warehouse-1780692900000",
+      "name": "Matmos",
+      "day": "Viernes",
+      "stage": "The Levi's Warehouse",
+      "startTime": "22:55",
+      "endTime": "23:40"
+    },
+    {
+      "id": "mechatok-plenitude-1780787700000",
+      "name": "Mechatok Live",
+      "day": "Sábado",
+      "stage": "Plenitude",
+      "startTime": "01:15",
+      "endTime": "02:05"
+    },
+    {
+      "id": "melt-banana-port-1780615800000",
+      "name": "Melt-Banana",
+      "day": "Jueves",
+      "stage": "Port",
+      "startTime": "01:30",
+      "endTime": "02:30"
+    },
+    {
+      "id": "men-i-trust-cupra-1780591800000",
+      "name": "Men I Trust",
+      "day": "Jueves",
+      "stage": "Cupra",
+      "startTime": "18:50",
+      "endTime": "19:40"
+    },
+    {
+      "id": "menine-barcelona-sona-1780602900000",
+      "name": "Menine",
+      "day": "Jueves",
+      "stage": "Barcelona Sona by Estrella Damm",
+      "startTime": "21:55",
+      "endTime": "22:50"
+    },
+    {
+      "id": "merzbow-auditori-rockdelux-1780686000000",
+      "name": "Merzbow",
+      "day": "Viernes",
+      "stage": "Auditori Rockdelux",
+      "startTime": "21:00",
+      "endTime": "22:00"
+    },
+    {
+      "id": "mina-galan-pulse-cupra-1780628400000",
+      "name": "Mina Galán",
+      "day": "Jueves",
+      "stage": "Cupra Pulse",
+      "startTime": "05:00",
+      "endTime": "06:30"
+    },
+    {
+      "id": "mobilegirl-plenitude-1780782300000",
+      "name": "mobilegirl",
+      "day": "Sábado",
+      "stage": "Plenitude",
+      "startTime": "23:45",
+      "endTime": "01:15"
+    },
+    {
+      "id": "mohammad-reza-mortazavi-warehouse-1780700100000",
+      "name": "Mohammad Reza Mortazavi",
+      "day": "Viernes",
+      "stage": "The Levi's Warehouse",
+      "startTime": "00:55",
+      "endTime": "02:05"
+    },
+    {
+      "id": "mourn-aperol-island-of-joy-1780588800000",
+      "name": "Mourn",
+      "day": "Jueves",
+      "stage": "Aperol Island of Joy",
+      "startTime": "18:00",
+      "endTime": "18:40"
+    },
+    {
+      "id": "muna-khaled-pulse-cupra-1780588800000",
+      "name": "Muna Khaled",
+      "day": "Jueves",
+      "stage": "Cupra Pulse",
+      "startTime": "18:00",
+      "endTime": "19:00"
+    },
+    {
+      "id": "my-bloody-valentine-estrella-damm-1780776300000",
+      "name": "My Bloody Valentine",
+      "day": "Sábado",
+      "stage": "Estrella Damm",
+      "startTime": "22:05",
+      "endTime": "23:20"
+    },
+    {
+      "id": "natalia-lacunza-levis-501-plaza-1780767900000",
+      "name": "Natalia Lacunza",
+      "day": "Sábado",
+      "stage": "The Levi's Plaza",
+      "startTime": "19:45",
+      "endTime": "20:15"
+    },
+    {
+      "id": "neska-warehouse-1780615800000",
+      "name": "neska",
+      "day": "Jueves",
+      "stage": "The Levi's Warehouse",
+      "startTime": "01:30",
+      "endTime": "02:30"
+    },
+    {
+      "id": "new-york-warehouse-1780611600000",
+      "name": "NEW YORK",
+      "day": "Jueves",
+      "stage": "The Levi's Warehouse",
+      "startTime": "00:20",
+      "endTime": "01:20"
+    },
+    {
+      "id": "newdad-estrella-damm-1780674000000",
+      "name": "NewDad",
+      "day": "Viernes",
+      "stage": "Estrella Damm",
+      "startTime": "17:40",
+      "endTime": "18:25"
+    },
+    {
+      "id": "nick-leon-schwarzkopf-1780793400000",
+      "name": "Nick León Live",
+      "day": "Sábado",
+      "stage": "Schwarzkopf",
+      "startTime": "02:50",
+      "endTime": "03:35"
+    },
+    {
+      "id": "nicole-aiff-barcelona-sona-1780682100000",
+      "name": "Nicole.Aiff",
+      "day": "Viernes",
+      "stage": "Barcelona Sona by Estrella Damm",
+      "startTime": "19:55",
+      "endTime": "20:40"
+    },
+    {
+      "id": "ninajirachi-port-1780796400000",
+      "name": "Ninajirachi",
+      "day": "Sábado",
+      "stage": "Port",
+      "startTime": "03:40",
+      "endTime": "04:30"
+    },
+    {
+      "id": "oklou-cupra-1780599000000",
+      "name": "Oklou",
+      "day": "Jueves",
+      "stage": "Cupra",
+      "startTime": "20:50",
+      "endTime": "21:50"
+    },
+    {
+      "id": "oli-xl-warehouse-1780620000000",
+      "name": "Oli XL Live",
+      "day": "Jueves",
+      "stage": "The Levi's Warehouse",
+      "startTime": "02:40",
+      "endTime": "03:40"
+    },
+    {
+      "id": "osserp-port-1780678800000",
+      "name": "Ósserp",
+      "day": "Viernes",
+      "stage": "Port",
+      "startTime": "19:00",
+      "endTime": "19:45"
+    },
+    {
+      "id": "ouineta-aperol-island-of-joy-1780680000000",
+      "name": "Ouineta",
+      "day": "Viernes",
+      "stage": "Aperol Island of Joy",
+      "startTime": "19:20",
+      "endTime": "20:00"
+    },
+    {
+      "id": "ouineta-parc-del-forum-1780501500000",
+      "name": "Ouineta",
+      "day": "Miércoles",
+      "stage": "Parc del Fòrum",
+      "startTime": "17:45",
+      "endTime": "18:25"
+    },
+    {
+      "id": "overmono-occident-1780621200000",
+      "name": "Overmono",
+      "day": "Jueves",
+      "stage": "Occident",
+      "startTime": "03:00",
+      "endTime": "04:00"
+    },
+    {
+      "id": "paco-te-quiero-aperol-island-of-joy-1780684800000",
+      "name": "Paco Te Quiero",
+      "day": "Viernes",
+      "stage": "Aperol Island of Joy",
+      "startTime": "20:40",
+      "endTime": "21:20"
+    },
+    {
+      "id": "panda-bear-auditori-rockdelux-1780603200000",
+      "name": "Panda Bear",
+      "day": "Jueves",
+      "stage": "Auditori Rockdelux",
+      "startTime": "22:00",
+      "endTime": "23:00"
+    },
+    {
+      "id": "paula-tape-disney-stage-1780596000000",
+      "name": "Paula Tape",
+      "day": "Jueves",
+      "stage": "Disney",
+      "startTime": "20:00",
+      "endTime": "20:40"
+    },
+    {
+      "id": "paus-port-1780586100000",
+      "name": "Paus",
+      "day": "Jueves",
+      "stage": "Port",
+      "startTime": "17:15",
+      "endTime": "18:00"
+    },
+    {
+      "id": "pavvla-cupra-1780672500000",
+      "name": "Pavvla",
+      "day": "Viernes",
+      "stage": "Cupra",
+      "startTime": "17:15",
+      "endTime": "17:55"
+    },
+    {
+      "id": "peggy-gou-cupra-1780798500000",
+      "name": "Peggy Gou",
+      "day": "Sábado",
+      "stage": "Cupra",
+      "startTime": "04:15",
+      "endTime": "05:45"
+    },
+    {
+      "id": "perfecto-miserable-aperol-island-of-joy-1780766400000",
+      "name": "Perfecto Miserable",
+      "day": "Sábado",
+      "stage": "Aperol Island of Joy",
+      "startTime": "19:20",
+      "endTime": "20:00"
+    },
+    {
+      "id": "pinkpantheress-cupra-1780703100000",
+      "name": "PinkPantheress",
+      "day": "Viernes",
+      "stage": "Cupra",
+      "startTime": "01:45",
+      "endTime": "02:45"
+    },
+    {
+      "id": "powder-plenitude-1780680600000",
+      "name": "Powder",
+      "day": "Viernes",
+      "stage": "Plenitude",
+      "startTime": "19:30",
+      "endTime": "21:00"
+    },
+    {
+      "id": "proc-fiskal-live-pulse-cupra-1780610400000",
+      "name": "Proc Fiskal live",
+      "day": "Jueves",
+      "stage": "Cupra Pulse",
+      "startTime": "00:00",
+      "endTime": "01:00"
+    },
+    {
+      "id": "ralphie-choo-cupra-1780685700000",
+      "name": "Ralphie Choo",
+      "day": "Viernes",
+      "stage": "Cupra",
+      "startTime": "20:55",
+      "endTime": "21:55"
+    },
+    {
+      "id": "raly-occident-1780588800000",
+      "name": "Raly",
+      "day": "Jueves",
+      "stage": "Occident",
+      "startTime": "18:00",
+      "endTime": "18:45"
+    },
+    {
+      "id": "rashad-becker-warehouse-1780696200000",
+      "name": "Rashad Becker",
+      "day": "Viernes",
+      "stage": "The Levi's Warehouse",
+      "startTime": "23:50",
+      "endTime": "00:45"
+    },
+    {
+      "id": "ravyn-lenae-estrella-damm-1780594500000",
+      "name": "Ravyn Lenae",
+      "day": "Jueves",
+      "stage": "Estrella Damm",
+      "startTime": "19:35",
+      "endTime": "20:35"
+    },
+    {
+      "id": "raya-diplomatica-es-port-1780708500000",
+      "name": "Raya Diplomática",
+      "day": "Viernes",
+      "stage": "Port",
+      "startTime": "03:15",
+      "endTime": "04:00"
+    },
+    {
+      "id": "renaldo-and-clara-schwarzkopf-1780589100000",
+      "name": "Renaldo & Clara",
+      "day": "Jueves",
+      "stage": "Schwarzkopf",
+      "startTime": "18:05",
+      "endTime": "18:50"
+    },
+    {
+      "id": "res-warehouse-1780776000000",
+      "name": "res_",
+      "day": "Sábado",
+      "stage": "The Levi's Warehouse",
+      "startTime": "22:00",
+      "endTime": "23:00"
+    },
+    {
+      "id": "rian-brazil-levis-501-club-1780682400000",
+      "name": "Rian Brazil",
+      "day": "Viernes",
+      "stage": "The 501 Club curated by Colors x Studios",
+      "startTime": "20:00",
+      "endTime": "20:30"
+    },
+    {
+      "id": "rilo-kiley-occident-1780681800000",
+      "name": "Rilo Kiley",
+      "day": "Viernes",
+      "stage": "Occident",
+      "startTime": "19:50",
+      "endTime": "20:50"
+    },
+    {
+      "id": "rojuu-schwarzkopf-1780611900000",
+      "name": "Rojuu",
+      "day": "Jueves",
+      "stage": "Schwarzkopf",
+      "startTime": "00:25",
+      "endTime": "01:25"
+    },
+    {
+      "id": "role-model-occident-1780689600000",
+      "name": "Role Model",
+      "day": "Viernes",
+      "stage": "Occident",
+      "startTime": "22:00",
+      "endTime": "23:15"
+    },
+    {
+      "id": "rose-gray-levis-501-plaza-1780679700000",
+      "name": "Rose Gray",
+      "day": "Viernes",
+      "stage": "The Levi's Plaza",
+      "startTime": "19:15",
+      "endTime": "19:45"
+    },
+    {
+      "id": "roza-terenzi-plenitude-1780697100000",
+      "name": "Roza Terenzi Live",
+      "day": "Viernes",
+      "stage": "Plenitude",
+      "startTime": "00:05",
+      "endTime": "01:05"
+    },
+    {
+      "id": "rusowsky-cupra-1780773300000",
+      "name": "rusowsky",
+      "day": "Sábado",
+      "stage": "Cupra",
+      "startTime": "21:15",
+      "endTime": "22:15"
+    },
+    {
+      "id": "rustie-pulse-cupra-1780617600000",
+      "name": "Rustie",
+      "day": "Jueves",
+      "stage": "Cupra Pulse",
+      "startTime": "02:00",
+      "endTime": "03:30"
+    },
+    {
+      "id": "sade-oulotola-levis-501-club-1780782300000",
+      "name": "Sade Oulotola",
+      "day": "Sábado",
+      "stage": "The 501 Club curated by Colors x Studios",
+      "startTime": "23:45",
+      "endTime": "00:15"
+    },
+    {
+      "id": "safety-trance-plenitude-1780774500000",
+      "name": "Safety Trance Live AV",
+      "day": "Sábado",
+      "stage": "Plenitude",
+      "startTime": "21:35",
+      "endTime": "22:30"
+    },
+    {
+      "id": "sama-abdulhadi-plenitude-1780706100000",
+      "name": "Sama’ Abdulhadi",
+      "day": "Viernes",
+      "stage": "Plenitude",
+      "startTime": "02:35",
+      "endTime": "05:00"
+    },
+    {
+      "id": "sama-yax-plenitude-1780588800000",
+      "name": "Sama Yax",
+      "day": "Jueves",
+      "stage": "Plenitude",
+      "startTime": "18:00",
+      "endTime": "19:00"
+    },
+    {
+      "id": "shackleton-warehouse-1780785600000",
+      "name": "Shackleton Live",
+      "day": "Sábado",
+      "stage": "The Levi's Warehouse",
+      "startTime": "00:40",
+      "endTime": "01:40"
+    },
+    {
+      "id": "shlohmo-port-1780694100000",
+      "name": "Shlohmo",
+      "day": "Viernes",
+      "stage": "Port",
+      "startTime": "23:15",
+      "endTime": "00:10"
+    },
+    {
+      "id": "six-sex-schwarzkopf-1780626900000",
+      "name": "Six Sex",
+      "day": "Jueves",
+      "stage": "Schwarzkopf",
+      "startTime": "04:35",
+      "endTime": "05:35"
+    },
+    {
+      "id": "skrillex-revolut-1780700400000",
+      "name": "Skrillex",
+      "day": "Viernes",
+      "stage": "Revolut",
+      "startTime": "01:00",
+      "endTime": "02:30"
+    },
+    {
+      "id": "skullcrusher-schwarzkopf-1780602900000",
+      "name": "Skullcrusher",
+      "day": "Jueves",
+      "stage": "Schwarzkopf",
+      "startTime": "21:55",
+      "endTime": "22:55"
+    },
+    {
+      "id": "slowdive-revolut-1780677300000",
+      "name": "Slowdive",
+      "day": "Viernes",
+      "stage": "Revolut",
+      "startTime": "18:35",
+      "endTime": "19:30"
+    },
+    {
+      "id": "smerz-port-1780772100000",
+      "name": "Smerz",
+      "day": "Sábado",
+      "stage": "Port",
+      "startTime": "20:55",
+      "endTime": "21:55"
+    },
+    {
+      "id": "sofia-port-1780758900000",
+      "name": "Sofia",
+      "day": "Sábado",
+      "stage": "Port",
+      "startTime": "17:15",
+      "endTime": "18:00"
+    },
+    {
+      "id": "sofy-suars-fever-1780675200000",
+      "name": "Sofy Suars",
+      "day": "Viernes",
+      "stage": "Fever House",
+      "startTime": "18:00",
+      "endTime": "19:00"
+    },
+    {
+      "id": "somos-la-herencia-occident-1780675200000",
+      "name": "Somos la Herencia",
+      "day": "Viernes",
+      "stage": "Occident",
+      "startTime": "18:00",
+      "endTime": "18:45"
+    },
+    {
+      "id": "sonny-pulse-cupra-1780761600000",
+      "name": "Curated by SONNY",
+      "day": "Sábado",
+      "stage": "Cupra Pulse",
+      "startTime": "18:00",
+      "endTime": "06:00"
+    },
+    {
+      "id": "spill-tab-schwarzkopf-backstage-1780775100000",
+      "name": "Spill Tab",
+      "day": "Sábado",
+      "stage": "The Backstage by Schwarzkopf",
+      "startTime": "21:45",
+      "endTime": "22:10"
+    },
+    {
+      "id": "st-frances-auditori-rockdelux-1780756200000",
+      "name": "st.frances",
+      "day": "Sábado",
+      "stage": "Auditori Rockdelux",
+      "startTime": "16:30",
+      "endTime": "17:30"
+    },
+    {
+      "id": "stein-pulse-cupra-1780614000000",
+      "name": "Stein",
+      "day": "Jueves",
+      "stage": "Cupra Pulse",
+      "startTime": "01:00",
+      "endTime": "02:00"
+    },
+    {
+      "id": "sudan-archives-occident-1780765200000",
+      "name": "Sudan Archives",
+      "day": "Sábado",
+      "stage": "Occident",
+      "startTime": "19:00",
+      "endTime": "19:45"
+    },
+    {
+      "id": "svsto-aperol-island-of-joy-1780776000000",
+      "name": "SVSTO",
+      "day": "Sábado",
+      "stage": "Aperol Island of Joy",
+      "startTime": "22:00",
+      "endTime": "22:40"
+    },
+    {
+      "id": "teo-planell-levis-501-plaza-1780600200000",
+      "name": "Teo Planell",
+      "day": "Jueves",
+      "stage": "The Levi's Plaza",
+      "startTime": "21:10",
+      "endTime": "21:40"
+    },
+    {
+      "id": "texas-is-the-reason-schwarzkopf-1780681800000",
+      "name": "Texas Is The Reason",
+      "day": "Viernes",
+      "stage": "Schwarzkopf",
+      "startTime": "19:50",
+      "endTime": "20:50"
+    },
+    {
+      "id": "the-avalanches-pulse-cupra-1780686000000",
+      "name": "The Avalanches DJ Set",
+      "day": "Viernes",
+      "stage": "Cupra Pulse",
+      "startTime": "21:00",
+      "endTime": "22:00"
+    },
+    {
+      "id": "the-cure-estrella-damm-1780690500000",
+      "name": "The Cure",
+      "day": "Viernes",
+      "stage": "Estrella Damm",
+      "startTime": "22:15",
+      "endTime": "00:45"
+    },
+    {
+      "id": "the-new-eves-port-1780592100000",
+      "name": "The New Eves",
+      "day": "Jueves",
+      "stage": "Port",
+      "startTime": "18:55",
+      "endTime": "19:45"
+    },
+    {
+      "id": "the-sophs-port-1780764600000",
+      "name": "The Sophs",
+      "day": "Sábado",
+      "stage": "Port",
+      "startTime": "18:50",
+      "endTime": "19:35"
+    },
+    {
+      "id": "the-xx-revolut-1780782000000",
+      "name": "The xx",
+      "day": "Sábado",
+      "stage": "Revolut",
+      "startTime": "23:40",
+      "endTime": "00:55"
+    },
+    {
+      "id": "these-new-puritans-auditori-rockdelux-1780761600000",
+      "name": "These New Puritans",
+      "day": "Sábado",
+      "stage": "Auditori Rockdelux",
+      "startTime": "18:00",
+      "endTime": "19:00"
+    },
+    {
+      "id": "tiyumii-pulse-cupra-1780675200000",
+      "name": "Tiyumii",
+      "day": "Viernes",
+      "stage": "Cupra Pulse",
+      "startTime": "18:00",
+      "endTime": "19:00"
+    },
+    {
+      "id": "touche-amore-schwarzkopf-1780776000000",
+      "name": "Touché Amoré",
+      "day": "Sábado",
+      "stage": "Schwarzkopf",
+      "startTime": "22:00",
+      "endTime": "23:00"
+    },
+    {
+      "id": "toumba-pulse-cupra-1780592400000",
+      "name": "Toumba live",
+      "day": "Jueves",
+      "stage": "Cupra Pulse",
+      "startTime": "19:00",
+      "endTime": "20:00"
+    },
+    {
+      "id": "tv-girl-occident-1780612200000",
+      "name": "TV Girl",
+      "day": "Jueves",
+      "stage": "Occident",
+      "startTime": "00:30",
+      "endTime": "01:30"
+    },
+    {
+      "id": "underground-resistance-schwarzkopf-1780711500000",
+      "name": "Underground Resistance",
+      "day": "Viernes",
+      "stage": "Schwarzkopf",
+      "startTime": "04:05",
+      "endTime": "05:20"
+    },
+    {
+      "id": "urtrax-plenitude-1780790700000",
+      "name": "u.r.trax Live",
+      "day": "Sábado",
+      "stage": "Plenitude",
+      "startTime": "02:05",
+      "endTime": "02:55"
+    },
+    {
+      "id": "vennus-schwarzkopf-1780756500000",
+      "name": "Ven’nus",
+      "day": "Sábado",
+      "stage": "Schwarzkopf",
+      "startTime": "16:35",
+      "endTime": "17:15"
+    },
+    {
+      "id": "viagra-boys-occident-1780707300000",
+      "name": "Viagra Boys",
+      "day": "Viernes",
+      "stage": "Occident",
+      "startTime": "02:55",
+      "endTime": "04:05"
+    },
+    {
+      "id": "vvv-trippinyou-port-1780623600000",
+      "name": "VVV [Trippin'you]",
+      "day": "Jueves",
+      "stage": "Port",
+      "startTime": "03:40",
+      "endTime": "04:30"
+    },
+    {
+      "id": "water-from-your-eyes-port-1780686000000",
+      "name": "Water From Your Eyes",
+      "day": "Viernes",
+      "stage": "Port",
+      "startTime": "21:00",
+      "endTime": "21:50"
+    },
+    {
+      "id": "waterbaby-levis-501-club-1780609500000",
+      "name": "Waterbaby",
+      "day": "Jueves",
+      "stage": "The 501 Club curated by Colors x Studios",
+      "startTime": "23:45",
+      "endTime": "00:15"
+    },
+    {
+      "id": "wet-leg-parc-del-forum-1780516500000",
+      "name": "Wet Leg",
+      "day": "Miércoles",
+      "stage": "Parc del Fòrum",
+      "startTime": "21:55",
+      "endTime": "23:05"
+    },
+    {
+      "id": "xavisphone-pulse-cupra-1780606800000",
+      "name": "xavisphone",
+      "day": "Jueves",
+      "stage": "Cupra Pulse",
+      "startTime": "23:00",
+      "endTime": "00:00"
+    },
+    {
+      "id": "yard-act-parc-del-forum-1780505700000",
+      "name": "Yard Act",
+      "day": "Miércoles",
+      "stage": "Parc del Fòrum",
+      "startTime": "18:55",
+      "endTime": "19:45"
+    },
+    {
+      "id": "ydegirl-levis-501-club-1780596000000",
+      "name": "Ydegirl",
+      "day": "Jueves",
+      "stage": "The 501 Club curated by Colors x Studios",
+      "startTime": "20:00",
+      "endTime": "20:30"
+    },
+    {
+      "id": "yousuke-yukimatsu-cupra-1780626600000",
+      "name": "¥ØU$UK€ ¥UK1MAT$U",
+      "day": "Jueves",
+      "stage": "Cupra",
+      "startTime": "04:30",
+      "endTime": "06:00"
+    },
+    {
+      "id": "zohar-pulse-cupra-1780623000000",
+      "name": "Zohar",
+      "day": "Jueves",
+      "stage": "Cupra Pulse",
+      "startTime": "03:30",
+      "endTime": "05:00"
+    }
+  ]
+}

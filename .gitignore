@@ -1,0 +1,24 @@
+# Dependencias de Node
+node_modules/
+
+# Logs de error y debug de npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Archivos de análisis temporal del Scraper (no necesarios en producción)
+intercepted_responses.json
+rendered_page.html
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Configuración local de IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
