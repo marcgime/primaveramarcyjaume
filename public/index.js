@@ -121,8 +121,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- INICIALIZADOR DE FILTROS DINÁMICOS ---
   function buildDayTabs() {
     const days = [...new Set(allConcerts.map(c => c.day))].filter(Boolean);
-    // Ordenar días (Jueves, Viernes, Sábado, etc.)
-    const dayOrder = ['jueves', 'viernes', 'sábado', 'sabado', 'domingo', 'lunes', 'martes', 'miércoles', 'miercoles'];
+    // Ordenar días (Miércoles, Jueves, Viernes, Sábado, etc.)
+    const dayOrder = ['miércoles', 'miercoles', 'jueves', 'viernes', 'sábado', 'sabado', 'domingo', 'lunes', 'martes'];
     days.sort((a, b) => {
       const idxA = dayOrder.indexOf(a.toLowerCase());
       const idxB = dayOrder.indexOf(b.toLowerCase());
@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', () => {
     filtered.sort((a, b) => {
       // Ordenar por día primero si mostramos todos
       if (selectedDay === '') {
-        const days = ['jueves', 'viernes', 'sábado', 'sabado', 'domingo'];
+        const days = ['miércoles', 'miercoles', 'jueves', 'viernes', 'sábado', 'sabado', 'domingo', 'lunes', 'martes'];
         const dayDiff = days.indexOf(a.day.toLowerCase()) - days.indexOf(b.day.toLowerCase());
         if (dayDiff !== 0) return dayDiff;
       }
@@ -410,7 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Ordenar los días para la agenda
     const days = Object.keys(grouped);
-    const dayOrder = ['jueves', 'viernes', 'sábado', 'sabado', 'domingo'];
+    const dayOrder = ['miércoles', 'miercoles', 'jueves', 'viernes', 'sábado', 'sabado', 'domingo', 'lunes', 'martes'];
     days.sort((a, b) => dayOrder.indexOf(a.toLowerCase()) - dayOrder.indexOf(b.toLowerCase()));
 
     // Renderizar cada grupo de día
