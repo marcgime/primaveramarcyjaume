@@ -70,14 +70,38 @@ document.addEventListener('DOMContentLoaded', () => {
   async function loadLineup() {
     showLoader(true);
     try {
-      // Cargar la agenda compartida desde el servidor
+      // Cargar favoritos: priorizar localStorage local para que sobreviva a redespliegues del servidor (Render).
+      let serverFavs = [];
       try {
         const favResponse = await fetch('/api/favorites');
-        favorites = await favResponse.json();
+        if (favResponse.ok) {
+          serverFavs = await favResponse.json();
+        }
       } catch (favErr) {
         console.error('Error cargando favoritos del servidor:', favErr);
-        // Fallback local por si el servidor falla
-        favorites = JSON.parse(localStorage.getItem('ps_favorites')) || [];
+      }
+
+      const localFavs = JSON.parse(localStorage.getItem('ps_favorites')) || [];
+
+      // Sincronizar datos locales y del servidor
+      if (localFavs.length > 0 && serverFavs.length === 0) {
+        // El servidor se ha reiniciado/redesplegado y está vacío, pero tenemos datos locales
+        favorites = localFavs;
+        await syncFavoritesWithServer(localFavs);
+      } else if (serverFavs.length > 0 && localFavs.length === 0) {
+        // Primera carga en un nuevo dispositivo/navegador, usamos los del servidor
+        favorites = serverFavs;
+        localStorage.setItem('ps_favorites', JSON.stringify(favorites));
+      } else if (localFavs.length > 0 && serverFavs.length > 0) {
+        // Ambos tienen datos, hacemos la unión para no perder nada y sincronizamos si hay discrepancias
+        const union = Array.from(new Set([...localFavs, ...serverFavs]));
+        favorites = union;
+        localStorage.setItem('ps_favorites', JSON.stringify(favorites));
+        if (union.length !== serverFavs.length) {
+          await syncFavoritesWithServer(union);
+        }
+      } else {
+        favorites = [];
       }
 
       const response = await fetch('/api/lineup');
@@ -330,6 +354,21 @@ document.addEventListener('DOMContentLoaded', () => {
     lucide.createIcons();
   }
 
+  // --- FUNCIÓN DE SINCRONIZACIÓN CON EL SERVIDOR ---
+  async function syncFavoritesWithServer(favs) {
+    try {
+      await fetch('/api/favorites', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ favorites: favs })
+      });
+    } catch (err) {
+      console.error('Error al sincronizar favoritos con el servidor:', err);
+    }
+  }
+
   // --- CONTROLADOR DE FAVORITOS ---
   async function toggleFavorite(id) {
     const index = favorites.indexOf(id);
@@ -342,18 +381,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Guardar en localStorage local como copia de seguridad/redundancia
     localStorage.setItem('ps_favorites', JSON.stringify(favorites));
     
-    // Guardar en el servidor para sincronizar con cualquier otro navegador/sesión
-    try {
-      await fetch('/api/favorites', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ favorites })
-      });
-    } catch (err) {
-      console.error('Error al guardar favoritos en el servidor:', err);
-    }
+    // Sincronizar con el servidor
+    await syncFavoritesWithServer(favorites);
     
     renderLineupList();
     renderPlanner();
