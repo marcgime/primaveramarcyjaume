@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let selectedDay = '';
   let selectedStage = '';
   let searchQuery = '';
+  let showIncompatibilities = false;
 
   // --- INICIALIZACIÓN ---
   loadLineup();
@@ -415,6 +416,27 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Renderizar alertas de colisión
     if (collisions.length > 0) {
+      const summaryCard = document.createElement('div');
+      summaryCard.className = 'overlaps-summary-card';
+      
+      const text = collisions.length === 1 
+        ? `Se ha detectado 1 incompatibilidad de horarios.`
+        : `Se han detectado ${collisions.length} incompatibilidades de horarios.`;
+        
+      summaryCard.innerHTML = `
+        <div class="overlaps-summary-info">
+          <i data-lucide="alert-triangle" class="overlap-icon-warning"></i>
+          <span>${text}</span>
+        </div>
+        <button id="toggle-incompatibilities-btn" class="btn-warning-sm">
+          ${showIncompatibilities ? 'Cerrar incompatibilidades' : 'Abrir incompatibilidades'}
+        </button>
+      `;
+      overlapsContainer.appendChild(summaryCard);
+
+      const listContainer = document.createElement('div');
+      listContainer.className = `incompatibilities-list ${showIncompatibilities ? '' : 'hidden'}`;
+      
       collisions.forEach(col => {
         const alert = document.createElement('div');
         alert.className = 'overlap-alert-card';
@@ -426,7 +448,20 @@ document.addEventListener('DOMContentLoaded', () => {
             <strong>${col.concert2.name}</strong> (${col.concert2.startTime}-${col.concert2.endTime} en <span class="stage-link" data-stage="${col.concert2.stage}">${col.concert2.stage}</span>) coinciden en su horario.
           </div>
         `;
-        overlapsContainer.appendChild(alert);
+        listContainer.appendChild(alert);
+      });
+      overlapsContainer.appendChild(listContainer);
+
+      const toggleBtn = summaryCard.querySelector('#toggle-incompatibilities-btn');
+      toggleBtn.addEventListener('click', () => {
+        showIncompatibilities = !showIncompatibilities;
+        if (showIncompatibilities) {
+          listContainer.classList.remove('hidden');
+          toggleBtn.textContent = 'Cerrar incompatibilidades';
+        } else {
+          listContainer.classList.add('hidden');
+          toggleBtn.textContent = 'Abrir incompatibilidades';
+        }
       });
     }
 
