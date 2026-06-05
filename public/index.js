@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const overlapsContainer = document.getElementById('overlaps-container');
   const plannerList = document.getElementById('planner-list');
   const exportCsvBtn = document.getElementById('export-csv-btn');
-  const exportJsonBtn = document.getElementById('export-json-btn');
   const exportIcsBtn = document.getElementById('export-ics-btn');
 
   // --- ESTADO DE LA APLICACIÓN ---
@@ -61,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- EXPORTAR ---
   exportCsvBtn.addEventListener('click', exportToCSV);
-  exportJsonBtn.addEventListener('click', exportToJSON);
   exportIcsBtn.addEventListener('click', () => {
     if (favorites.length === 0) return;
     window.location.href = `/api/calendar/agenda.ics?ids=${favorites.join(',')}`;
@@ -398,14 +396,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (favorites.length === 0) {
       plannerEmpty.classList.remove('hidden');
       exportCsvBtn.disabled = true;
-      exportJsonBtn.disabled = true;
       exportIcsBtn.disabled = true;
       return;
     }
 
     plannerEmpty.classList.add('hidden');
     exportCsvBtn.disabled = false;
-    exportJsonBtn.disabled = false;
     exportIcsBtn.disabled = false;
 
     // Obtener los objetos completos de favoritos
@@ -654,18 +650,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.removeChild(link);
   }
 
-  function exportToJSON() {
-    const favConcerts = allConcerts.filter(c => favorites.includes(c.id));
-    if (favConcerts.length === 0) return;
 
-    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(favConcerts, null, 2));
-    const link = document.createElement("a");
-    link.setAttribute("href", dataStr);
-    link.setAttribute("download", "agenda_primavera_sound_2026.json");
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
 
   // --- LÓGICA DE POPUP DE MAPA Y ZOOM ---
   const mapModal = document.getElementById('map-modal');
