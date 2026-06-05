@@ -149,6 +149,25 @@ body {
   display: none;
 }
 
+.mobile-map-download-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  color: var(--primary);
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.18);
+  padding: 0.25rem;
+  border-radius: 6px;
+  vertical-align: middle;
+  transition: var(--transition);
+}
+
+.mobile-map-download-btn:hover {
+  background: rgba(99, 102, 241, 0.15);
+  transform: translateY(-1px);
+}
+
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -1088,6 +1107,10 @@ body {
   }
   .app-title {
     font-size: 1.35rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.35rem;
   }
   .logo-area {
     gap: 0.1rem;
@@ -1095,6 +1118,12 @@ body {
   .badge {
     font-size: 0.6rem;
     padding: 0.15rem 0.45rem;
+  }
+  #download-map-btn {
+    display: none !important;
+  }
+  .mobile-map-download-btn {
+    display: inline-flex;
   }
 }
 
